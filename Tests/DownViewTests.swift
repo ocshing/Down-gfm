@@ -97,8 +97,11 @@ class DownViewTests: XCTestCase {
         }
     }
 
-    @available(iOS 11.0, macOS 10.13, *)
     func testCustomURLSchemeHandler() {
+        guard #available(iOS 11.0, macOS 10.13, *) else {
+            return
+        }
+
         let mockURLScheme = "down"
         let mockURL = URL(string: "down://test")!
         let expectation = self.expectation(description: "DownView supports custom URL handlers.")
@@ -132,10 +135,7 @@ class DownViewTests: XCTestCase {
         mockURLSchemeHandler.mockURL = mockURL
         mockURLSchemeHandler.testExpectation = expectation
         let configuration = WKWebViewConfiguration()
-
-        if #available(iOS 11.0, *) {
-            configuration.setURLSchemeHandler(mockURLSchemeHandler, forURLScheme: mockURLScheme)
-        }
+        configuration.setURLSchemeHandler(mockURLSchemeHandler, forURLScheme: mockURLScheme)
 
         downView = try? DownView(frame: .zero, markdownString: "[Link](\(mockURL.absoluteString))", openLinksInBrowser: true, configuration: configuration, didLoadSuccessfully: didLoadSuccessfully)
 
