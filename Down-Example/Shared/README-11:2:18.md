@@ -1,3 +1,7 @@
+# Down-gfm
+fork from Down and replace cmark with cmark-gfm.
+- [x] support checkbox (from  GitHawkApp/cmark-gfm-swift)
+
 ## Down
 [![Build Status](https://travis-ci.org/iwasrobbed/Down.svg?branch=master)](https://travis-ci.org/iwasrobbed/Down)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iwasrobbed/Down/blob/master/LICENSE)

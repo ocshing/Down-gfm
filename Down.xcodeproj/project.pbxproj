@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		14C5E33521877CE900D5380C /* DownView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D41689B51CFFE6BB00E5802B /* DownView.bundle */; };
+		7342DFF421B0F6D500F75E3F /* checkbox.c in Sources */ = {isa = PBXBuildFile; fileRef = 7342DFF221B0F6D400F75E3F /* checkbox.c */; };
+		7342DFF521B0F6D500F75E3F /* checkbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 7342DFF321B0F6D500F75E3F /* checkbox.h */; };
 		7344286721AFB69C003E159C /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = 7344282321AFB69B003E159C /* xml.c */; };
 		7344286821AFB69C003E159C /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 7344282421AFB69B003E159C /* cmark.c */; };
 		7344286A21AFB69C003E159C /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = 7344282621AFB69B003E159C /* man.c */; };
@@ -154,6 +156,8 @@
 
 /* Begin PBXFileReference section */
 		14C5E33621877FCD00D5380C /* DownView (macOS).bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "DownView (macOS).bundle"; sourceTree = "<group>"; };
+		7342DFF221B0F6D400F75E3F /* checkbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = checkbox.c; sourceTree = "<group>"; };
+		7342DFF321B0F6D500F75E3F /* checkbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checkbox.h; sourceTree = "<group>"; };
 		7344282121AFB69B003E159C /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		7344282321AFB69B003E159C /* xml.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xml.c; sourceTree = "<group>"; };
 		7344282421AFB69B003E159C /* cmark.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmark.c; sourceTree = "<group>"; };
@@ -323,6 +327,8 @@
 			children = (
 				7344285C21AFB69C003E159C /* autolink.c */,
 				7344286121AFB69C003E159C /* autolink.h */,
+				7342DFF221B0F6D400F75E3F /* checkbox.c */,
+				7342DFF321B0F6D500F75E3F /* checkbox.h */,
 				7344285B21AFB69C003E159C /* cmark-gfm-core-extensions.h */,
 				7344286021AFB69C003E159C /* cmark-gfm-extensions_export.h */,
 				7344286621AFB69C003E159C /* core-extensions.c */,
@@ -481,6 +487,7 @@
 				7344289521AFB69C003E159C /* iterator.h in Headers */,
 				7344288F21AFB69C003E159C /* inlines.h in Headers */,
 				7344289B21AFB69C003E159C /* render.h in Headers */,
+				7342DFF521B0F6D500F75E3F /* checkbox.h in Headers */,
 				734428A421AFB69C003E159C /* autolink.h in Headers */,
 				7344287221AFB69C003E159C /* cmark-gfm-extension_api.h in Headers */,
 				7344287421AFB69C003E159C /* map.h in Headers */,
@@ -639,6 +646,7 @@
 			files = (
 				7344288C21AFB69C003E159C /* map.c in Sources */,
 				7344286721AFB69C003E159C /* xml.c in Sources */,
+				7342DFF421B0F6D500F75E3F /* checkbox.c in Sources */,
 				8A569F761E6B3EE3008BE2AC /* NSAttributedString+HTML.swift in Sources */,
 				8A569F481E6B3ED2008BE2AC /* DownView.swift in Sources */,
 				7344289921AFB69C003E159C /* node.c in Sources */,
