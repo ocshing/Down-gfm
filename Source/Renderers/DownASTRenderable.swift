@@ -60,7 +60,8 @@ public struct DownASTRenderer {
             cmark_parser_free(parser)
         }
 
-        var ext: UnsafeMutablePointer<cmark_syntax_extension> = cmark_find_syntax_extension("table")
+        var ext: UnsafeMutablePointer<cmark_syntax_extension>;
+        ext = cmark_find_syntax_extension("tagfilter")
         cmark_parser_attach_syntax_extension(parser, ext)
 
         ext = cmark_find_syntax_extension("autolink")
@@ -69,10 +70,10 @@ public struct DownASTRenderer {
         ext = cmark_find_syntax_extension("strikethrough")
         cmark_parser_attach_syntax_extension(parser, ext)
 
-        ext = cmark_find_syntax_extension("tagfilter")
+        ext = cmark_find_syntax_extension("checkbox")
         cmark_parser_attach_syntax_extension(parser, ext)
 
-        ext = cmark_find_syntax_extension("checkbox")
+        ext = cmark_find_syntax_extension("table")
         cmark_parser_attach_syntax_extension(parser, ext)
 
         var tree: UnsafeMutablePointer<cmark_node>?
