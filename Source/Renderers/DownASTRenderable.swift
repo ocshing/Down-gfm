@@ -70,7 +70,7 @@ public struct DownASTRenderer {
         ext = cmark_find_syntax_extension("strikethrough")
         cmark_parser_attach_syntax_extension(parser, ext)
 
-        ext = cmark_find_syntax_extension("checkbox")
+        ext = cmark_find_syntax_extension("tasklist")
         cmark_parser_attach_syntax_extension(parser, ext)
 
         ext = cmark_find_syntax_extension("table")

@@ -1,6 +1,6 @@
 # Down-gfm
 fork from Down and replace cmark with cmark-gfm.
-- [x] support checkbox (from  GitHawkApp/cmark-gfm-swift)
+- [x] support tasklist
 
 ## Down
 [![Build Status](https://travis-ci.org/iwasrobbed/Down.svg?branch=master)](https://travis-ci.org/iwasrobbed/Down)

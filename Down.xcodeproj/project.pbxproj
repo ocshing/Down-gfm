@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		14C5E33521877CE900D5380C /* DownView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D41689B51CFFE6BB00E5802B /* DownView.bundle */; };
-		7342DFF421B0F6D500F75E3F /* checkbox.c in Sources */ = {isa = PBXBuildFile; fileRef = 7342DFF221B0F6D400F75E3F /* checkbox.c */; };
-		7342DFF521B0F6D500F75E3F /* checkbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 7342DFF321B0F6D500F75E3F /* checkbox.h */; };
 		7344286721AFB69C003E159C /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = 7344282321AFB69B003E159C /* xml.c */; };
 		7344286821AFB69C003E159C /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 7344282421AFB69B003E159C /* cmark.c */; };
 		7344286A21AFB69C003E159C /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = 7344282621AFB69B003E159C /* man.c */; };
@@ -74,6 +72,8 @@
 		734428A721AFB69C003E159C /* tagfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7344286421AFB69C003E159C /* tagfilter.h */; };
 		734428A821AFB69C003E159C /* ext_scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 7344286521AFB69C003E159C /* ext_scanners.h */; };
 		734428A921AFB69C003E159C /* core-extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 7344286621AFB69C003E159C /* core-extensions.c */; };
+		73C2CBAD21BF681700DE5511 /* tasklist.c in Sources */ = {isa = PBXBuildFile; fileRef = 73C2CBAB21BF681600DE5511 /* tasklist.c */; };
+		73C2CBAE21BF681700DE5511 /* tasklist.h in Headers */ = {isa = PBXBuildFile; fileRef = 73C2CBAC21BF681700DE5511 /* tasklist.h */; };
 		8A569F481E6B3ED2008BE2AC /* DownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43AE5D91CFFD0D0006E1522 /* DownView.swift */; };
 		8A569F6E1E6B3EDE008BE2AC /* DownASTRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D486E9951CFDD4860059FD7C /* DownASTRenderable.swift */; };
 		8A569F6F1E6B3EDE008BE2AC /* DownAttributedStringRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF88971CFFAC2C00F07FD1 /* DownAttributedStringRenderable.swift */; };
@@ -156,8 +156,6 @@
 
 /* Begin PBXFileReference section */
 		14C5E33621877FCD00D5380C /* DownView (macOS).bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "DownView (macOS).bundle"; sourceTree = "<group>"; };
-		7342DFF221B0F6D400F75E3F /* checkbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = checkbox.c; sourceTree = "<group>"; };
-		7342DFF321B0F6D500F75E3F /* checkbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checkbox.h; sourceTree = "<group>"; };
 		7344282121AFB69B003E159C /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		7344282321AFB69B003E159C /* xml.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xml.c; sourceTree = "<group>"; };
 		7344282421AFB69B003E159C /* cmark.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmark.c; sourceTree = "<group>"; };
@@ -223,6 +221,10 @@
 		7344286421AFB69C003E159C /* tagfilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tagfilter.h; sourceTree = "<group>"; };
 		7344286521AFB69C003E159C /* ext_scanners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ext_scanners.h; sourceTree = "<group>"; };
 		7344286621AFB69C003E159C /* core-extensions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "core-extensions.c"; sourceTree = "<group>"; };
+		73C2CBAB21BF681600DE5511 /* tasklist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tasklist.c; sourceTree = "<group>"; };
+		73C2CBAC21BF681700DE5511 /* tasklist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tasklist.h; sourceTree = "<group>"; };
+		73C2CBAF21BF686100DE5511 /* case_fold_switch.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = case_fold_switch.inc; sourceTree = "<group>"; };
+		73C2CBB021BF686100DE5511 /* entities.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = entities.inc; sourceTree = "<group>"; };
 		8A569F401E6B3E50008BE2AC /* Down.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Down.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFAEAFB1E6E32E900E09B68 /* DownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		907C64621EC120530095FEE1 /* TestDownView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TestDownView.bundle; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				7344282821AFB69B003E159C /* blocks.c */,
 				7344282721AFB69B003E159C /* buffer.c */,
 				7344284421AFB69B003E159C /* buffer.h */,
+				73C2CBAF21BF686100DE5511 /* case_fold_switch.inc */,
 				7344283221AFB69B003E159C /* chunk.h */,
 				7344282921AFB69B003E159C /* cmark_ctype.c */,
 				7344284321AFB69B003E159C /* cmark_ctype.h */,
@@ -282,6 +285,7 @@
 				7344282421AFB69B003E159C /* cmark.c */,
 				7344284721AFB69B003E159C /* commonmark.c */,
 				7344283121AFB69B003E159C /* config.h */,
+				73C2CBB021BF686100DE5511 /* entities.inc */,
 				7344284F21AFB69B003E159C /* footnotes.c */,
 				7344283621AFB69B003E159C /* footnotes.h */,
 				7344282F21AFB69B003E159C /* houdini_href_e.c */,
@@ -327,8 +331,6 @@
 			children = (
 				7344285C21AFB69C003E159C /* autolink.c */,
 				7344286121AFB69C003E159C /* autolink.h */,
-				7342DFF221B0F6D400F75E3F /* checkbox.c */,
-				7342DFF321B0F6D500F75E3F /* checkbox.h */,
 				7344285B21AFB69C003E159C /* cmark-gfm-core-extensions.h */,
 				7344286021AFB69C003E159C /* cmark-gfm-extensions_export.h */,
 				7344286621AFB69C003E159C /* core-extensions.c */,
@@ -340,6 +342,8 @@
 				7344286321AFB69C003E159C /* table.h */,
 				7344285F21AFB69C003E159C /* tagfilter.c */,
 				7344286421AFB69C003E159C /* tagfilter.h */,
+				73C2CBAB21BF681600DE5511 /* tasklist.c */,
+				73C2CBAC21BF681700DE5511 /* tasklist.h */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -487,7 +491,6 @@
 				7344289521AFB69C003E159C /* iterator.h in Headers */,
 				7344288F21AFB69C003E159C /* inlines.h in Headers */,
 				7344289B21AFB69C003E159C /* render.h in Headers */,
-				7342DFF521B0F6D500F75E3F /* checkbox.h in Headers */,
 				734428A421AFB69C003E159C /* autolink.h in Headers */,
 				7344287221AFB69C003E159C /* cmark-gfm-extension_api.h in Headers */,
 				7344287421AFB69C003E159C /* map.h in Headers */,
@@ -496,6 +499,7 @@
 				7344288721AFB69C003E159C /* cmark_ctype.h in Headers */,
 				7344287A21AFB69C003E159C /* footnotes.h in Headers */,
 				734428A621AFB69C003E159C /* table.h in Headers */,
+				73C2CBAE21BF681700DE5511 /* tasklist.h in Headers */,
 				7344287E21AFB69C003E159C /* scanners.h in Headers */,
 				7344288021AFB69C003E159C /* node.h in Headers */,
 				7344286E21AFB69C003E159C /* html.h in Headers */,
@@ -646,7 +650,6 @@
 			files = (
 				7344288C21AFB69C003E159C /* map.c in Sources */,
 				7344286721AFB69C003E159C /* xml.c in Sources */,
-				7342DFF421B0F6D500F75E3F /* checkbox.c in Sources */,
 				8A569F761E6B3EE3008BE2AC /* NSAttributedString+HTML.swift in Sources */,
 				8A569F481E6B3ED2008BE2AC /* DownView.swift in Sources */,
 				7344289921AFB69C003E159C /* node.c in Sources */,
@@ -655,6 +658,7 @@
 				7344289321AFB69C003E159C /* footnotes.c in Sources */,
 				7344286D21AFB69C003E159C /* cmark_ctype.c in Sources */,
 				7344288421AFB69C003E159C /* iterator.c in Sources */,
+				73C2CBAD21BF681700DE5511 /* tasklist.c in Sources */,
 				7344287321AFB69C003E159C /* houdini_href_e.c in Sources */,
 				8A569F721E6B3EDE008BE2AC /* DownHTMLRenderable.swift in Sources */,
 				7344289F21AFB69C003E159C /* autolink.c in Sources */,
