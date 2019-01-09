@@ -1,6 +1,6 @@
 # Down-gfm
 fork from Down and replace cmark with cmark-gfm.
-- [x] support checkbox (from  GitHawkApp/cmark-gfm-swift)
+- [x] support tasklist
 - [x] support table
 - [x] support autolink
 
