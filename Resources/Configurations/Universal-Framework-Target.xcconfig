@@ -23,3 +23,5 @@ ENABLE_BITCODE[sdk=iphonesimulator*]          = NO
 ENABLE_BITCODE[sdk=iphone*]                   = YES
 ENABLE_BITCODE[sdk=appletvsimulator*]         = YES
 ENABLE_BITCODE[sdk=appletv*]                  = YES
+
+SWIFT_INCLUDE_PATHS = $(inherited) $(PROJECT_DIR)/Carthage/Checkouts/down/Source/cmark
